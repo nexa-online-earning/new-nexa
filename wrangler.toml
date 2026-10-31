@@ -1,0 +1,15 @@
+# Cloudflare Pages / Workers Root Configuration for NEXA EARN
+name = "nexa-earn"
+pages_build_output_dir = "dist"
+compatibility_date = "2024-09-23"
+
+[vars]
+APP_NAME = "NEXA EARN"
+APP_ENV = "production"
+ADMIN_INITIAL_EMAIL = "rrdd8397@gmail.com"
+
+# Server-Side Environment Variables for Cloudflare Pages Functions / Worker
+# Configure secrets via:
+#   npx wrangler secret put SUPABASE_URL
+#   npx wrangler secret put SUPABASE_SECRET_KEY
+#   npx wrangler secret put SUPABASE_ANON_KEY

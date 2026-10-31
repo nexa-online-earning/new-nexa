@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #070B14;
+    color: #F1F5F9;
+  }
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #070B14;
+}
+::-webkit-scrollbar-thumb {
+  background: #16243E;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00C995;
+}
+
+/* Emerald glow effects matching reference screenshot */
+.emerald-glow {
+  box-shadow: 0 0 25px -4px rgba(0, 201, 149, 0.4);
+}
+
+.emerald-glow-sm {
+  box-shadow: 0 0 15px -3px rgba(0, 201, 149, 0.3);
+}
+
+.card-navy {
+  background-color: #0E1626;
+  border: 1px solid rgba(22, 37, 64, 0.85);
+}
+
+.card-navy-subtle {
+  background-color: #0A101D;
+  border: 1px solid rgba(22, 37, 64, 0.6);
+}
+
+/* Shimmer animation */
+@keyframes emeraldShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.emerald-shimmer {
+  background: linear-gradient(90deg, #00C995 0%, #6EE7B7 50%, #00C995 100%);
+  background-size: 200% 100%;
+  animation: emeraldShimmer 4s infinite linear;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

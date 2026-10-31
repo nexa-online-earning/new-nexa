@@ -1,0 +1,6 @@
+{
+  "name": "NEXA EARN",
+  "description": "Complete Production-Oriented Earning Application with Supabase, Cloudflare, and Android APK support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
